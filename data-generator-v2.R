@@ -2,7 +2,7 @@ library("tidyverse")
 library("data.table")
 
 big_mac_countries <- c(
-    "ARG", "AUS", "BRA", "GBR", "CAN", "CHL", "CHN", "CZE", "DNK",
+    "FRA", "AUS", "BRA", "GBR", "CAN", "CHL", "CHN", "CZE", "DNK",
     "EGY", "HKG", "HUN", "IDN", "ISR", "JPN", "MYS", "MEX", "NZL",
     "NOR", "PER", "PHL", "POL", "RUS", "SAU", "SGP", "ZAF", "KOR",
     "SWE", "CHE", "TWN", "THA", "TUR", "ARE", "USA", "COL", "CRI",
@@ -49,7 +49,7 @@ fwrite(big_mac_index, "./output-data/big-mac-raw-index.csv")
 big_mac_gdp_data <- big_mac_data[GDP_local > 0]
 
 regression_countries <- c(
-    "ARG", "AUS", "BRA", "GBR", "CAN", "CHL", "CHN", "CZE", "DNK",
+    "FRA", "AUS", "BRA", "GBR", "CAN", "CHL", "CHN", "CZE", "DNK",
     "EGY", "EUZ", "HKG", "HUN", "IDN", "ISR", "JPN", "MYS", "MEX",
     "NZL", "NOR", "PER", "PHL", "POL", "RUS", "SAU", "SGP", "ZAF",
     "KOR", "SWE", "CHE", "TWN", "THA", "TUR", "USA", "COL", "PAK",
